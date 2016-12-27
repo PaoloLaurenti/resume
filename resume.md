@@ -6,7 +6,7 @@ Paolo Laurenti
 - Twitter: [paololaurenti](https://twitter.com/paololaurenti)
 - GitHub: [paololaurenti](https://github.com/PaoloLaurenti)
 - LinkedIn: [laurentipaolo](https://it.linkedin.com/in/laurentipaolo)
-- StackOverflow: [paololaurenti](http://stackoverflow.com/story/paololaurenti)
+- Stack Overflow: [paololaurenti](http://stackoverflow.com/story/paololaurenti)
 
 ## About
 
