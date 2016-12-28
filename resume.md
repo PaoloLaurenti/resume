@@ -1,12 +1,13 @@
-Paolo Laurenti
-============
-## Contacts
-- Mail: [laurentipaolo@gmail.com](laurentipaolo@gmail.com)
-- Phone: (+39) 339 8118220
-- Twitter: [paololaurenti](https://twitter.com/paololaurenti)
-- GitHub: [paololaurenti](https://github.com/PaoloLaurenti)
-- LinkedIn: [laurentipaolo](https://it.linkedin.com/in/laurentipaolo)
-- Stack Overflow: [paololaurenti](http://stackoverflow.com/story/paololaurenti)
+# Paolo Laurenti
+
+Castenaso, Bologna - Italy   
+[laurentipaolo@gmail.com](laurentipaolo@gmail.com)    
+(+39) 339 8118220    
+
+Twitter | GitHub | LinkedIn | Stack Overflow |
+------------ | ------------- | --- | --
+[paololaurenti](ht tps://twitter.com/paololaurenti) | [paololaurenti](https://github.com/PaoloLaurenti) | [laurentipaolo](https://it.linkedin.com/in/laurentipaolo) | [paololaurenti](http://stackoverflow.com/story/paololaurenti)
+
 
 ## About
 
