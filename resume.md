@@ -106,11 +106,11 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 - Subversion
 
 
-#### NoSQL
+#### NoSQL ( *Intermediate* )
 - MongoDB
 
 
-#### Other programming languages
+#### Other programming languages ( *Beginner* )
 - Elixir
 - Erlang
 - Ruby
