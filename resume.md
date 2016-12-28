@@ -4,10 +4,10 @@ Castenaso, Bologna - Italy
 [laurentipaolo@gmail.com](laurentipaolo@gmail.com)    
 (+39) 339 8118220    
 
-Twitter | GitHub | LinkedIn | Stack Overflow |
------------- | ------------- | --- | --
-[paololaurenti](ht tps://twitter.com/paololaurenti) | [paololaurenti](https://github.com/PaoloLaurenti) | [laurentipaolo](https://it.linkedin.com/in/laurentipaolo) | [paololaurenti](http://stackoverflow.com/story/paololaurenti)
 
+Twitter | GitHub | LinkedIn | Stack Overflow |
+------------ | ------------- | ------------ | ------------- |
+[paololaurenti](https://twitter.com/paololaurenti) | [paololaurenti](https://github.com/PaoloLaurenti) | [laurentipaolo](https://it.linkedin.com/in/laurentipaolo) | [paololaurenti](http://stackoverflow.com/story/paololaurenti)
 
 ## About
 
