@@ -11,7 +11,11 @@ Twitter | GitHub | LinkedIn | Stack Overflow |
 
 ## About
 
-I am a software developer with a great passion for my job. I try to continuously improve myself in order to produce better software. I love to work in an environment that considers quality a number one priority and strives to get things done in the most efficient way. I am happy when I am surrounded by people more skilled than me but at the same time I love sharing what I know with everyone. I enjoy to experiment new technologies; functional languages, distributed computing, scalability issues are the challenges with which I'd like to work. I'd love to work with BEAM technologies like Elixir and Erlang languages because I am very fascinated by the power of the BEAM VM, the wonderful implementation of the actor model mixed with the functional approach
+I am a software developer with a great passion for my job.    
+I try to continuously improve myself in order to produce better software; I love to work in an environment that considers quality a number one priority and strives to get things done in the most efficient way.   
+I am a fast learner and an effective team player: I am happy when I am surrounded by people more skilled than me but at the same time I love sharing with everyone what I know.    
+I enjoy to experiment new technologies; functional languages, distributed computing, scalability issues are the challenges with which I'd like to work.   
+I'd love to work with BEAM technologies like Elixir and Erlang languages because I am very fascinated by the power of the BEAM VM and the wonderful implementation of the actor model mixed with the functional approach.
 
 ## Employment
 
@@ -19,8 +23,8 @@ I am a software developer with a great passion for my job. I try to continuously
 
 I was part of a team that was in charge of handling the software responsible for the cataloguing of the products of all the e-commerce of the group
 - Completed the first part of the integration between legacy applications and new P.I.M. software bought from an external vendor
+- Created several applications with Microservices Architecture that allow the business to process the shipping restrictions of products in real time
 - Started recurring monthly meetings with all the developers of the department with the purpose of learning together (coderetreat, coder dojo, watching technical video, etc...)
-- Created a software that allows the real time processing of the shipping restrictions of products
 
 ### *Software developer*, [Elleffegi Consulting](http://www.elleffegiconsulting.com) ( 2013-02 — 2013-10 )
 
@@ -67,7 +71,7 @@ I manage the organization of the monthly events of the group. "Bologna XPug" is 
 
 I am part of the group "The Wild Bunch" that organizes "NoSlidesConf" conference. It's a single day event with speakers showing technical sessions with only one requirement: it cannot be used any slide at all. The sessions must show something that works, live and running. The first edition took place in Bologna on Saturday December 3rd 2016
 - Around 40 sessions proposal received
-ß- 1 day, 14 sessions, 150 attendees
+- 1 day, 14 sessions, 150 attendees
 
 ### *Staff member*, [Bologna Tech Scene](http://bolognatechscene.it/) ( 2016-07 — Present )
 
@@ -110,6 +114,9 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 #### NoSQL ( *Intermediate* )
 - MongoDB
 
+
+#### DevOps ( *Beginner* )
+- Docker
 
 #### Other programming languages ( *Beginner* )
 - Elixir
