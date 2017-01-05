@@ -69,7 +69,7 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 ## Skills
 
 
-#### Software design ( *Expert* )
+#### Software design ( Expert )
 - Object Oriented Design
 - Test Driven Design
 - Domain Driven Design
@@ -82,14 +82,13 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 #### .NET ( Advanced )
 - C#
 - MS SQL Server
-- NuGet
 
 
 #### Messaging ( Advanced )
 - RabbitMQ
 
 
-#### Methodologies ( *Advanced* )
+#### Methodologies ( Advanced )
 - Extreme Programming
 - Agile Principles/Practices
 - Scrum
