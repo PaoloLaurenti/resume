@@ -68,13 +68,15 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 
 ## Skills
 
-#### Software design ( Expert )
-- Object oriented design
-- Test driven design,
+
+#### Software design ( *Expert* )
+- Object Oriented Design
+- Test Driven Design
+- Domain Driven Design
 - G.O.F. Design patterns
-- S.O.L.I.D. principles
+- S.O.L.I.D. Principles
 - Hexagonal Architecture
-- Enterprise integration patterns
+- Enterprise Integration Patterns
 
 
 #### .NET ( Advanced )
@@ -87,9 +89,9 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 - RabbitMQ
 
 
-#### Methodologies ( Advanced )
-- Extreme programming
-- Agile principles
+#### Methodologies ( *Advanced* )
+- Extreme Programming
+- Agile Principles/Practices
 - Scrum
 - Kanban
 
