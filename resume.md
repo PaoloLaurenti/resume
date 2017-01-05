@@ -73,7 +73,7 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 - Test Driven Design
 - Domain Driven Design
 - G.O.F. Design patterns
-- S.O.L.I.D. principles
+- S.O.L.I.D. Principles
 - Hexagonal Architecture
 - Enterprise Integration Patterns
 
