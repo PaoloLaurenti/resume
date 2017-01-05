@@ -37,27 +37,16 @@ I was part of the R&D team and I worked on the development and maintenance of a 
 - Improved the Continuous Integration pipeline with the creation of some ad hoc stages used to automate the building of the whole application
 - Added new functionalities to the P.O.S. software module in order to make the application able to manage new credit card payment devices
 
-### *Software developer consultant*, [Gecod](https://www.linkedin.com/company/gecod) ( 2010-08 — 2011-05 )
-
-I worked as a consultant on software projects involving the maintenance and development of control applications at "Manutencoop Facility Management"
-
-### *Founder and Software developer*, Digitalinsoft ( 2009-06 — 2010-08 )
-
-I was one of the two founders of the company: we provided software development services to other companies that were needing software in order to improve their internal processes
-
-### *Software developer*, [Xtel](http://www.kantarretail.com/xtel/) (2007-06 — 2009-06)
-
-I was part of a team that was in charge of the analysis, development and maintenance of ERP software created and sold by the company. The application had many capabilities (like sales force management, contract management, promotional management, etc...) relating to the management of relationships between producers of consumer goods and retail chains
+### *Software developer* ( 2005 - 20011 )
+I worked for several companies as Software developer, as employee, consultant and one year as owner.
 
 ## Education
 
 ### University of Bologna ( 2001-10 — 2006-03 )
-Bachelor Degree   
-Computer Science (98/110)
+Bachelor Degree - *Computer Science* ( 98/110 )
 
 ### I.T.I.S. O. Belluzzi - Bologna ( 1996-09 — 2001-07 )
-Senior High School Degree   
-Computer Science (88/100)
+Senior High School Degree - *Computer Science* ( 88/100 )
 
 ## Volunteer
 
@@ -79,7 +68,7 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 
 ## Skills
 
-#### Software Design ( *Expert* )
+#### Software design ( *Expert* )
 - Object oriented design
 - Test driven design,
 - G.O.F. Design patterns
