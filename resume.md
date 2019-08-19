@@ -19,7 +19,14 @@ I'd love to work with BEAM technologies like Elixir and Erlang languages because
 
 ## Employment
 
-### *Senior software developer*, [Yoox Net-A-Porter Group](http://www.ynap.com) ( 2013-11 — Present )
+### *Senior software developer*, [CodicePlastico](https://codiceplastico.com) ( 2017-05 — present )
+
+I am in charge of the development and maintanance of many software applications built by CodicePlastico since 2009.  
+We follow the customer software project from the inception using anlaysis tool and customer interview. We use an interative approach refining at each step the customer requirements.  
+The projects are built with different technologies like _elixir_, _dotnet core_, _node.js_, _react.js_ and _angular_.  
+I work full time from remote and we gather toghether every six weeks to do a team retrospective and other company meetings
+
+### *Senior software developer*, [Yoox Net-A-Porter Group](http://www.ynap.com) ( 2013-11 — 2017-05 )
 
 I was part of a team that was in charge of handling the software responsible for the cataloguing of the products of all the e-commerce of the group
 - Completed the first part of the integration between legacy applications and new P.I.M. software bought from an external vendor
@@ -56,7 +63,7 @@ I manage the organization of the monthly events of the group. "Bologna XPug" is 
 - Organized a monthly meeting from October to June, with a lot of different topics
 - Found new location for the monthly events
 
-### *Organizer*, [NoSlidesConf](http://www.noslidesconf.net/) ( 2016-12 — Present )
+### *Organizer*, [NoSlidesConf](http://www.noslidesconf.net/) ( 2016-12 — 2017-11 )
 
 I am part of the group "The Wild Bunch" that organizes "NoSlidesConf" conference. It's a single day event with speakers showing technical sessions with only one requirement: it cannot be used any slide at all. The sessions must show something that works, live and running. The first edition took place in Bologna on Saturday December 3rd 2016
 - Around 40 sessions proposal received
@@ -78,10 +85,17 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 - Enterprise Integration Patterns
 
 
-#### .NET ( *Advanced* )
-- C#
+#### Languages 
+- Elixir ( *Advanced* )
+- Erlang ( *Intermediate* )
+- C# - dotnet core ( *Advanced* )
+- Javascript ( *Intermediate* )
+
+
+#### Database ( *Intermediate* )
+- MongoDB
+- PostgreSQL
 - MS SQL Server
-- NuGet
 
 
 #### Messaging ( *Advanced* )
@@ -98,27 +112,22 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 #### Version control systems ( *Advanced* )
 - Git
 - Mercurial
-- Subversion
 
 
-#### NoSQL ( *Intermediate* )
-- MongoDB
+#### DevOps
+- Docker ( *Advanced* )
+- Google Cloud Platform ( *Beginner* )
+- Kubernetes ( *Beginner* )
 
-
-#### DevOps ( *Beginner* )
-- Docker
-
-#### Other programming languages ( *Beginner* )
-- Elixir
-- Erlang
-- Ruby
-- Javascript (NodeJS)
 
 ## Interests
+
+#### Sports
+- Basketball
 
 #### Theater
 - Improv
 - Comedy
 
-#### Music
-- Singing
+#### Other
+- Wine tasting
