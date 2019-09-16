@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resume.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="paolo-laurenti">Paolo Laurenti</h1>
+<p>Castenaso, Bologna - Italy<br>
+<a href="laurentipaolo@gmail.com">laurentipaolo@gmail.com</a><br>
+(+39) 339 8118220</p>
+<table>
+<thead>
+<tr>
+<th>Twitter</th>
+<th>GitHub</th>
+<th>LinkedIn</th>
+<th>Stack Overflow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://twitter.com/paololaurenti">paololaurenti</a></td>
+<td><a href="https://github.com/PaoloLaurenti">paololaurenti</a></td>
+<td><a href="https://it.linkedin.com/in/laurentipaolo">laurentipaolo</a></td>
+<td><a href="http://stackoverflow.com/story/paololaurenti">paololaurenti</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="about">About</h2>
+<p>I am a software developer with a great passion for my job.<br>
+I try to continuously improve myself in order to produce better software; I love to work in an environment that considers quality a number one priority and strives to get things done in the most efficient way.<br>
+I am a fast learner and an effective team player: I am happy when I am surrounded by people more skilled than me but at the same time I love sharing with everyone what I know.<br>
+I enjoy to experiment new technologies; functional languages, distributed computing, scalability issues are the challenges with which I'd like to work.<br>
+I'd love to work with BEAM technologies like Elixir and Erlang languages because I am very fascinated by the power of the BEAM VM and the wonderful implementation of the actor model mixed with the functional approach.</p>
+<h2 id="employment">Employment</h2>
+<h3 id="senior-software-developer-codiceplastico-2017-05-%E2%80%94-present"><em>Senior software developer</em>, <a href="https://codiceplastico.com">CodicePlastico</a> ( 2017-05 — present )</h3>
+<p>I am in charge of the development and maintanance of many software applications built by CodicePlastico since 2009.<br>
+We follow the customer software project from the inception using anlaysis tool and customer interview. We use an interative approach refining at each step the customer requirements.<br>
+The projects are built with different technologies like <em>elixir</em>, <em>dotnet core</em>, <em>node.js</em>, <em>react.js</em> and <em>elm</em>.<br>
+I work full time from remote and we gather toghether every six weeks to do a team retrospective and other company meetings</p>
+<h3 id="senior-software-developer-yoox-net-a-porter-group-2013-11-%E2%80%94-2017-05"><em>Senior software developer</em>, <a href="http://www.ynap.com">Yoox Net-A-Porter Group</a> ( 2013-11 — 2017-05 )</h3>
+<p>I was part of a team that was in charge of handling the software responsible for the cataloguing of the products of all the e-commerce of the group</p>
+<ul>
+<li>Completed the first part of the integration between legacy applications and new P.I.M. software bought from an external vendor</li>
+<li>Created several applications with Microservices Architecture that allow the business to process the shipping restrictions of products in real time</li>
+<li>Started recurring monthly meetings with all the developers of the department with the purpose of learning together (coderetreat, coder dojo, watching technical video, etc...)</li>
+</ul>
+<h3 id="software-developer-elleffegi-consulting-2013-02-%E2%80%94-2013-10"><em>Software developer</em>, <a href="http://www.elleffegiconsulting.com">Elleffegi Consulting</a> ( 2013-02 — 2013-10 )</h3>
+<p>I was the only software developer of the company and I was in charge of the development and maintenance of web applications used by the company to provide consulting and training services</p>
+<h3 id="software-developer-qubicaamf-2011-06-%E2%80%94-2013-01"><em>Software developer</em>, <a href="https://www.qubicaamf.com/">QubicaAMF</a> ( 2011-06 — 2013-01 )</h3>
+<p>I was part of the R&amp;D team and I worked on the development and maintenance of a standalone software used to manage the bowling centers located all over the world</p>
+<ul>
+<li>Completed the transition from CVS version control system to Subversion</li>
+<li>Improved the Continuous Integration pipeline with the creation of some ad hoc stages used to automate the building of the whole application</li>
+<li>Added new functionalities to the P.O.S. software module in order to make the application able to manage new credit card payment devices</li>
+</ul>
+<h3 id="software-developer-2005---20011"><em>Software developer</em> ( 2005 - 20011 )</h3>
+<p>I worked for several companies as Software developer, as employee, consultant and one year as owner.</p>
+<h2 id="education">Education</h2>
+<h3 id="university-of-bologna-2001-10-%E2%80%94-2006-03">University of Bologna ( 2001-10 — 2006-03 )</h3>
+<p>Bachelor Degree - <em>Computer Science</em> ( 98/110 )</p>
+<h3 id="itis-o-belluzzi---bologna-1996-09-%E2%80%94-2001-07">I.T.I.S. O. Belluzzi - Bologna ( 1996-09 — 2001-07 )</h3>
+<p>Senior High School Degree - <em>Computer Science</em> ( 88/100 )</p>
+<h2 id="volunteer">Volunteer</h2>
+<h3 id="organizer-extreme-programming-user-group-xpug-bologna-2015-02-%E2%80%94-present"><em>Organizer</em>, <a href="http://glokta.biodec.com/cgi-bin/mailman/listinfo/bologna-xpug">Extreme Programming User Group (XPug) Bologna</a> ( 2015-02 — Present)</h3>
+<p>I manage the organization of the monthly events of the group. &quot;Bologna XPug&quot; is a community of people interested into  &quot;eXtreme Programming&quot; and everything related to software: technologies, best practices, methodologies, etc...</p>
+<ul>
+<li>Organized a monthly meeting from October to June, with a lot of different topics</li>
+<li>Found new location for the monthly events</li>
+</ul>
+<h3 id="organizer-noslidesconf-2016-12-%E2%80%94-2017-11"><em>Organizer</em>, <a href="http://www.noslidesconf.net/">NoSlidesConf</a> ( 2016-12 — 2017-11 )</h3>
+<p>I am part of the group &quot;The Wild Bunch&quot; that organizes &quot;NoSlidesConf&quot; conference. It's a single day event with speakers showing technical sessions with only one requirement: it cannot be used any slide at all. The sessions must show something that works, live and running. The first edition took place in Bologna on Saturday December 3rd 2016</p>
+<ul>
+<li>Around 40 sessions proposal received</li>
+<li>1 day, 14 sessions, 150 attendees</li>
+</ul>
+<h3 id="staff-member-bologna-tech-scene-2016-07-%E2%80%94-present"><em>Staff member</em>, <a href="http://bolognatechscene.it/">Bologna Tech Scene</a> ( 2016-07 — Present )</h3>
+<p>I am part of the staff that maintains the web site http://bolognatechscene.it/ and everything related to it. The site aims being a central hub of all the tech communities/events located in Bologna (Italy)</p>
+<h2 id="skills">Skills</h2>
+<h4 id="software-architecture-advanced">Software architecture ( <em>Advanced</em> )</h4>
+<ul>
+<li>Enterprise Integration Patterns</li>
+<li>REST</li>
+</ul>
+<h4 id="software-design-expert">Software design ( <em>Expert</em> )</h4>
+<ul>
+<li>Object Oriented Design</li>
+<li>Test Driven Design</li>
+<li>Domain Driven Design</li>
+<li>G.O.F. Design patterns</li>
+<li>S.O.L.I.D. Principles</li>
+<li>Hexagonal Architecture</li>
+</ul>
+<h4 id="languages">Languages</h4>
+<ul>
+<li>Elixir ( <em>Advanced</em> )</li>
+<li>Erlang ( <em>Intermediate</em> )</li>
+<li>C# - dotnet core ( <em>Advanced</em> )</li>
+<li>Javascript ( <em>Intermediate</em> )</li>
+<li>Elm ( <em>Beginner</em> )</li>
+</ul>
+<h4 id="database-intermediate">Database ( <em>Intermediate</em> )</h4>
+<ul>
+<li>MongoDB</li>
+<li>PostgreSQL</li>
+<li>MS SQL Server</li>
+</ul>
+<h4 id="messaging-advanced">Messaging ( <em>Advanced</em> )</h4>
+<ul>
+<li>RabbitMQ</li>
+</ul>
+<h4 id="methodologies-advanced">Methodologies ( <em>Advanced</em> )</h4>
+<ul>
+<li>Extreme Programming</li>
+<li>Agile Principles/Practices</li>
+<li>Scrum</li>
+<li>Kanban</li>
+</ul>
+<h4 id="version-control-systems-advanced">Version control systems ( <em>Advanced</em> )</h4>
+<ul>
+<li>Git</li>
+<li>Mercurial</li>
+</ul>
+<h4 id="devops">DevOps</h4>
+<ul>
+<li>Docker ( <em>Advanced</em> )</li>
+<li>Google Cloud Platform ( <em>Beginner</em> )</li>
+<li>Kubernetes ( <em>Beginner</em> )</li>
+</ul>
+<h2 id="interests">Interests</h2>
+<h4 id="sports">Sports</h4>
+<ul>
+<li>Basketball</li>
+</ul>
+<h4 id="theater">Theater</h4>
+<ul>
+<li>Improv</li>
+<li>Comedy</li>
+</ul>
+<h4 id="other">Other</h4>
+<ul>
+<li>Wine tasting</li>
+</ul>
+
+</body>
+</html>
