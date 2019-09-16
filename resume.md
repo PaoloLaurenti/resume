@@ -23,7 +23,7 @@ I'd love to work with BEAM technologies like Elixir and Erlang languages because
 
 I am in charge of the development and maintanance of many software applications built by CodicePlastico since 2009.  
 We follow the customer software project from the inception using anlaysis tool and customer interview. We use an interative approach refining at each step the customer requirements.  
-The projects are built with different technologies like _elixir_, _dotnet core_, _node.js_, _react.js_ and _angular_.  
+The projects are built with different technologies like _elixir_, _dotnet core_, _node.js_, _react.js_ and _elm_.  
 I work full time from remote and we gather toghether every six weeks to do a team retrospective and other company meetings
 
 ### *Senior software developer*, [Yoox Net-A-Porter Group](http://www.ynap.com) ( 2013-11 — 2017-05 )
@@ -75,6 +75,10 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 
 ## Skills
 
+#### Software architecture ( *Advanced* )
+- Enterprise Integration Patterns
+- REST
+
 #### Software design ( *Expert* )
 - Object Oriented Design
 - Test Driven Design
@@ -82,25 +86,21 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 - G.O.F. Design patterns
 - S.O.L.I.D. Principles
 - Hexagonal Architecture
-- Enterprise Integration Patterns
-
 
 #### Languages 
 - Elixir ( *Advanced* )
 - Erlang ( *Intermediate* )
 - C# - dotnet core ( *Advanced* )
 - Javascript ( *Intermediate* )
-
+- Elm ( *Beginner* )
 
 #### Database ( *Intermediate* )
 - MongoDB
 - PostgreSQL
 - MS SQL Server
 
-
 #### Messaging ( *Advanced* )
 - RabbitMQ
-
 
 #### Methodologies ( *Advanced* )
 - Extreme Programming
@@ -108,17 +108,14 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 - Scrum
 - Kanban
 
-
 #### Version control systems ( *Advanced* )
 - Git
 - Mercurial
-
 
 #### DevOps
 - Docker ( *Advanced* )
 - Google Cloud Platform ( *Beginner* )
 - Kubernetes ( *Beginner* )
-
 
 ## Interests
 
