@@ -7,7 +7,7 @@ Castenaso, Bologna - Italy
 
 Twitter | GitHub | LinkedIn | Stack Overflow |
 ------------ | ------------- | ------------ | ------------- |
-[paololaurenti](https://twitter.com/paololaurenti) | [paololaurenti](https://github.com/PaoloLaurenti) | [laurentipaolo](https://it.linkedin.com/in/laurentipaolo) | [paololaurenti](http://stackoverflow.com/story/paololaurenti)
+[https://twitter.com/paololaurenti](https://twitter.com/paololaurenti) | [https://github.com/paololaurenti](https://github.com/paololaurenti) | [https://it.linkedin.com/in/laurentipaolo](https://it.linkedin.com/in/laurentipaolo) | [http://stackoverflow.com/story/paololaurenti](http://stackoverflow.com/story/paololaurenti)
 
 ## About
 
@@ -22,7 +22,9 @@ I'd love to work with BEAM technologies like Elixir and Erlang languages because
 ### *Senior software developer*, [CodicePlastico](https://codiceplastico.com) ( 2017-05 — present )
 
 I am in charge of the development and maintanance of many software applications built by CodicePlastico since 2009.  
-We follow the customer software project from the inception using anlaysis tool and customer interview. We use an interative approach refining at each step the customer requirements.  
+My focus is also on the architectural design of the systems, from the fresh start and continuing wiht its evolution in time.  
+We follow the customer software project from the inception using anlaysis tool and customer interviews.  
+We use an interative approach refining at each step the customer requirements.  
 The projects are built with different technologies like _elixir_, _dotnet core_, _node.js_, _react.js_ and _elm_.  
 I work full time from remote and we gather toghether every six weeks to do a team retrospective and other company meetings
 
@@ -33,18 +35,14 @@ I was part of a team that was in charge of handling the software responsible for
 - Created several applications with Microservices Architecture that allow the business to process the shipping restrictions of products in real time
 - Started recurring monthly meetings with all the developers of the department with the purpose of learning together (coderetreat, coder dojo, watching technical video, etc...)
 
-### *Software developer*, [Elleffegi Consulting](http://www.elleffegiconsulting.com) ( 2013-02 — 2013-10 )
-
-I was the only software developer of the company and I was in charge of the development and maintenance of web applications used by the company to provide consulting and training services
-
-### *Software developer*, [QubicaAMF](https://www.qubicaamf.com/) ( 2011-06 — 2013-01 )
+### *Software developer*, [QubicaAMF](https://www.qubicaamf.com/) ( 2011-06 — 2013-10 )
 
 I was part of the R&D team and I worked on the development and maintenance of a standalone software used to manage the bowling centers located all over the world
 - Completed the transition from CVS version control system to Subversion
 - Improved the Continuous Integration pipeline with the creation of some ad hoc stages used to automate the building of the whole application
 - Added new functionalities to the P.O.S. software module in order to make the application able to manage new credit card payment devices
 
-### *Software developer* ( 2005 - 20011 )
+### *Software developer* ( 2005 - 2011 )
 I worked for several companies as Software developer, as employee, consultant and one year as owner.
 
 ## Education
@@ -119,12 +117,7 @@ I am part of the staff that maintains the web site http://bolognatechscene.it/ a
 
 ## Interests
 
-#### Sports
 - Basketball
-
-#### Theater
-- Improv
-- Comedy
-
-#### Other
+- Guitar
 - Wine tasting
+- Theatre

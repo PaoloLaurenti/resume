@@ -5,16 +5,17 @@
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
 body {
-	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
-	font-size: 14px;
-	padding: 0 12px;
-	line-height: 22px;
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
 	word-wrap: break-word;
 }
 
@@ -38,7 +39,6 @@ body {
 	background-color:#007acc;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
 }
-
 
 body.scrollBeyondLastLine {
 	margin-bottom: calc(100vh - 22px);
@@ -71,12 +71,20 @@ body.showEditorSelection li.code-line:hover:before {
 	border-left: 3px solid rgba(0, 0, 0, 0.40);
 }
 
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
 .vscode-dark.showEditorSelection .code-active-line:before {
 	border-left: 3px solid rgba(255, 255, 255, 0.4);
 }
 
 .vscode-dark.showEditorSelection .code-line:hover:before {
 	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
 }
 
 .vscode-high-contrast.showEditorSelection .code-active-line:before {
@@ -87,14 +95,21 @@ body.showEditorSelection li.code-line:hover:before {
 	border-left: 3px solid rgba(255, 160, 0, 1);
 }
 
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
 img {
 	max-width: 100%;
 	max-height: 100%;
 }
 
 a {
-	color: #4080D0;
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 a:focus,
@@ -122,21 +137,6 @@ h1, h2, h3 {
 	font-weight: normal;
 }
 
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
-	font-size: inherit;
-	line-height: auto;
-}
-
-a:hover {
-	color: #4080D0;
-	text-decoration: underline;
-}
-
 table {
 	border-collapse: collapse;
 }
@@ -160,22 +160,18 @@ table > tbody > tr + tr > td {
 blockquote {
 	margin: 0 7px 0 5px;
 	padding: 0 16px 0 10px;
-	border-left: 5px solid;
+	border-left-width: 5px;
+	border-left-style: solid;
 }
 
 code {
 	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 14px;
-	line-height: 19px;
+	font-size: 1em;
+	line-height: 1.357em;
 }
 
 body.wordWrap pre {
 	white-space: pre-wrap;
-}
-
-.mac code {
-	font-size: 12px;
-	line-height: 18px;
 }
 
 pre:not(.hljs),
@@ -185,43 +181,22 @@ pre.hljs code > div {
 	overflow: auto;
 }
 
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
 /** Theming */
 
-.vscode-light,
-.vscode-light pre code {
-	color: rgb(30, 30, 30);
-}
-
-.vscode-dark,
-.vscode-dark pre code {
-	color: #DDD;
-}
-
-.vscode-high-contrast,
-.vscode-high-contrast pre code {
-	color: white;
-}
-
-.vscode-light code {
-	color: #A31515;
-}
-
-.vscode-dark code {
-	color: #D7BA7D;
-}
-
-.vscode-light pre:not(.hljs),
-.vscode-light code > div {
+.vscode-light pre {
 	background-color: rgba(220, 220, 220, 0.4);
 }
 
-.vscode-dark pre:not(.hljs),
-.vscode-dark code > div {
+.vscode-dark pre {
 	background-color: rgba(10, 10, 10, 0.4);
 }
 
-.vscode-high-contrast pre:not(.hljs),
-.vscode-high-contrast code > div {
+.vscode-high-contrast pre {
 	background-color: rgb(0, 0, 0);
 }
 
@@ -249,16 +224,6 @@ pre.hljs code > div {
 	border-color: rgba(255, 255, 255, 0.18);
 }
 
-.vscode-light blockquote,
-.vscode-dark blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.vscode-high-contrast blockquote {
-	background: transparent;
-	border-color: #fff;
-}
 </style>
 
 <style>
@@ -343,7 +308,8 @@ pre.hljs code > div {
  */
 
  body {
-	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
 }
 
 pre {
@@ -369,6 +335,11 @@ blockquote {
 	height: 1.4em;
 }
 
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
 /* for inline code */
 :not(pre):not(.hljs) > code {
 	color: #C9AE75; /* Change the old color so it seems less like an error */
@@ -383,8 +354,17 @@ blockquote {
 
 </style>
 
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
 </head>
 <body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
 <h1 id="paolo-laurenti">Paolo Laurenti</h1>
 <p>Castenaso, Bologna - Italy<br>
 <a href="laurentipaolo@gmail.com">laurentipaolo@gmail.com</a><br>
@@ -400,10 +380,10 @@ blockquote {
 </thead>
 <tbody>
 <tr>
-<td><a href="https://twitter.com/paololaurenti">paololaurenti</a></td>
-<td><a href="https://github.com/PaoloLaurenti">paololaurenti</a></td>
-<td><a href="https://it.linkedin.com/in/laurentipaolo">laurentipaolo</a></td>
-<td><a href="http://stackoverflow.com/story/paololaurenti">paololaurenti</a></td>
+<td><a href="https://twitter.com/paololaurenti">https://twitter.com/paololaurenti</a></td>
+<td><a href="https://github.com/paololaurenti">https://github.com/paololaurenti</a></td>
+<td><a href="https://it.linkedin.com/in/laurentipaolo">https://it.linkedin.com/in/laurentipaolo</a></td>
+<td><a href="http://stackoverflow.com/story/paololaurenti">http://stackoverflow.com/story/paololaurenti</a></td>
 </tr>
 </tbody>
 </table>
@@ -414,56 +394,56 @@ I am a fast learner and an effective team player: I am happy when I am surrounde
 I enjoy to experiment new technologies; functional languages, distributed computing, scalability issues are the challenges with which I'd like to work.<br>
 I'd love to work with BEAM technologies like Elixir and Erlang languages because I am very fascinated by the power of the BEAM VM and the wonderful implementation of the actor model mixed with the functional approach.</p>
 <h2 id="employment">Employment</h2>
-<h3 id="senior-software-developer-codiceplastico-2017-05-%E2%80%94-present"><em>Senior software developer</em>, <a href="https://codiceplastico.com">CodicePlastico</a> ( 2017-05 — present )</h3>
+<h3 id="senior-software-developer-codiceplastico--2017-05--present"><em>Senior software developer</em>, <a href="https://codiceplastico.com">CodicePlastico</a> ( 2017-05 — present )</h3>
 <p>I am in charge of the development and maintanance of many software applications built by CodicePlastico since 2009.<br>
-We follow the customer software project from the inception using anlaysis tool and customer interview. We use an interative approach refining at each step the customer requirements.<br>
+My focus is also on the architectural design of the systems, from the fresh start and continuing wiht its evolution in time.<br>
+We follow the customer software project from the inception using anlaysis tool and customer interviews.<br>
+We use an interative approach refining at each step the customer requirements.<br>
 The projects are built with different technologies like <em>elixir</em>, <em>dotnet core</em>, <em>node.js</em>, <em>react.js</em> and <em>elm</em>.<br>
 I work full time from remote and we gather toghether every six weeks to do a team retrospective and other company meetings</p>
-<h3 id="senior-software-developer-yoox-net-a-porter-group-2013-11-%E2%80%94-2017-05"><em>Senior software developer</em>, <a href="http://www.ynap.com">Yoox Net-A-Porter Group</a> ( 2013-11 — 2017-05 )</h3>
+<h3 id="senior-software-developer-yoox-net-a-porter-group--2013-11--2017-05"><em>Senior software developer</em>, <a href="http://www.ynap.com">Yoox Net-A-Porter Group</a> ( 2013-11 — 2017-05 )</h3>
 <p>I was part of a team that was in charge of handling the software responsible for the cataloguing of the products of all the e-commerce of the group</p>
 <ul>
 <li>Completed the first part of the integration between legacy applications and new P.I.M. software bought from an external vendor</li>
 <li>Created several applications with Microservices Architecture that allow the business to process the shipping restrictions of products in real time</li>
 <li>Started recurring monthly meetings with all the developers of the department with the purpose of learning together (coderetreat, coder dojo, watching technical video, etc...)</li>
 </ul>
-<h3 id="software-developer-elleffegi-consulting-2013-02-%E2%80%94-2013-10"><em>Software developer</em>, <a href="http://www.elleffegiconsulting.com">Elleffegi Consulting</a> ( 2013-02 — 2013-10 )</h3>
-<p>I was the only software developer of the company and I was in charge of the development and maintenance of web applications used by the company to provide consulting and training services</p>
-<h3 id="software-developer-qubicaamf-2011-06-%E2%80%94-2013-01"><em>Software developer</em>, <a href="https://www.qubicaamf.com/">QubicaAMF</a> ( 2011-06 — 2013-01 )</h3>
+<h3 id="software-developer-qubicaamf--2011-06--2013-10"><em>Software developer</em>, <a href="https://www.qubicaamf.com/">QubicaAMF</a> ( 2011-06 — 2013-10 )</h3>
 <p>I was part of the R&amp;D team and I worked on the development and maintenance of a standalone software used to manage the bowling centers located all over the world</p>
 <ul>
 <li>Completed the transition from CVS version control system to Subversion</li>
 <li>Improved the Continuous Integration pipeline with the creation of some ad hoc stages used to automate the building of the whole application</li>
 <li>Added new functionalities to the P.O.S. software module in order to make the application able to manage new credit card payment devices</li>
 </ul>
-<h3 id="software-developer-2005---20011"><em>Software developer</em> ( 2005 - 20011 )</h3>
+<h3 id="software-developer--2005---2011"><em>Software developer</em> ( 2005 - 2011 )</h3>
 <p>I worked for several companies as Software developer, as employee, consultant and one year as owner.</p>
 <h2 id="education">Education</h2>
-<h3 id="university-of-bologna-2001-10-%E2%80%94-2006-03">University of Bologna ( 2001-10 — 2006-03 )</h3>
+<h3 id="university-of-bologna--2001-10--2006-03">University of Bologna ( 2001-10 — 2006-03 )</h3>
 <p>Bachelor Degree - <em>Computer Science</em> ( 98/110 )</p>
-<h3 id="itis-o-belluzzi---bologna-1996-09-%E2%80%94-2001-07">I.T.I.S. O. Belluzzi - Bologna ( 1996-09 — 2001-07 )</h3>
+<h3 id="itis-o-belluzzi---bologna--1996-09--2001-07">I.T.I.S. O. Belluzzi - Bologna ( 1996-09 — 2001-07 )</h3>
 <p>Senior High School Degree - <em>Computer Science</em> ( 88/100 )</p>
 <h2 id="volunteer">Volunteer</h2>
-<h3 id="organizer-extreme-programming-user-group-xpug-bologna-2015-02-%E2%80%94-present"><em>Organizer</em>, <a href="http://glokta.biodec.com/cgi-bin/mailman/listinfo/bologna-xpug">Extreme Programming User Group (XPug) Bologna</a> ( 2015-02 — Present)</h3>
+<h3 id="organizer-extreme-programming-user-group-xpug-bologna--2015-02--present"><em>Organizer</em>, <a href="http://glokta.biodec.com/cgi-bin/mailman/listinfo/bologna-xpug">Extreme Programming User Group (XPug) Bologna</a> ( 2015-02 — Present)</h3>
 <p>I manage the organization of the monthly events of the group. &quot;Bologna XPug&quot; is a community of people interested into  &quot;eXtreme Programming&quot; and everything related to software: technologies, best practices, methodologies, etc...</p>
 <ul>
 <li>Organized a monthly meeting from October to June, with a lot of different topics</li>
 <li>Found new location for the monthly events</li>
 </ul>
-<h3 id="organizer-noslidesconf-2016-12-%E2%80%94-2017-11"><em>Organizer</em>, <a href="http://www.noslidesconf.net/">NoSlidesConf</a> ( 2016-12 — 2017-11 )</h3>
+<h3 id="organizer-noslidesconf--2016-12--2017-11"><em>Organizer</em>, <a href="http://www.noslidesconf.net/">NoSlidesConf</a> ( 2016-12 — 2017-11 )</h3>
 <p>I am part of the group &quot;The Wild Bunch&quot; that organizes &quot;NoSlidesConf&quot; conference. It's a single day event with speakers showing technical sessions with only one requirement: it cannot be used any slide at all. The sessions must show something that works, live and running. The first edition took place in Bologna on Saturday December 3rd 2016</p>
 <ul>
 <li>Around 40 sessions proposal received</li>
 <li>1 day, 14 sessions, 150 attendees</li>
 </ul>
-<h3 id="staff-member-bologna-tech-scene-2016-07-%E2%80%94-present"><em>Staff member</em>, <a href="http://bolognatechscene.it/">Bologna Tech Scene</a> ( 2016-07 — Present )</h3>
+<h3 id="staff-member-bologna-tech-scene--2016-07--present"><em>Staff member</em>, <a href="http://bolognatechscene.it/">Bologna Tech Scene</a> ( 2016-07 — Present )</h3>
 <p>I am part of the staff that maintains the web site http://bolognatechscene.it/ and everything related to it. The site aims being a central hub of all the tech communities/events located in Bologna (Italy)</p>
 <h2 id="skills">Skills</h2>
-<h4 id="software-architecture-advanced">Software architecture ( <em>Advanced</em> )</h4>
+<h4 id="software-architecture--advanced">Software architecture ( <em>Advanced</em> )</h4>
 <ul>
 <li>Enterprise Integration Patterns</li>
 <li>REST</li>
 </ul>
-<h4 id="software-design-expert">Software design ( <em>Expert</em> )</h4>
+<h4 id="software-design--expert">Software design ( <em>Expert</em> )</h4>
 <ul>
 <li>Object Oriented Design</li>
 <li>Test Driven Design</li>
@@ -480,24 +460,24 @@ I work full time from remote and we gather toghether every six weeks to do a tea
 <li>Javascript ( <em>Intermediate</em> )</li>
 <li>Elm ( <em>Beginner</em> )</li>
 </ul>
-<h4 id="database-intermediate">Database ( <em>Intermediate</em> )</h4>
+<h4 id="database--intermediate">Database ( <em>Intermediate</em> )</h4>
 <ul>
 <li>MongoDB</li>
 <li>PostgreSQL</li>
 <li>MS SQL Server</li>
 </ul>
-<h4 id="messaging-advanced">Messaging ( <em>Advanced</em> )</h4>
+<h4 id="messaging--advanced">Messaging ( <em>Advanced</em> )</h4>
 <ul>
 <li>RabbitMQ</li>
 </ul>
-<h4 id="methodologies-advanced">Methodologies ( <em>Advanced</em> )</h4>
+<h4 id="methodologies--advanced">Methodologies ( <em>Advanced</em> )</h4>
 <ul>
 <li>Extreme Programming</li>
 <li>Agile Principles/Practices</li>
 <li>Scrum</li>
 <li>Kanban</li>
 </ul>
-<h4 id="version-control-systems-advanced">Version control systems ( <em>Advanced</em> )</h4>
+<h4 id="version-control-systems--advanced">Version control systems ( <em>Advanced</em> )</h4>
 <ul>
 <li>Git</li>
 <li>Mercurial</li>
@@ -509,18 +489,11 @@ I work full time from remote and we gather toghether every six weeks to do a tea
 <li>Kubernetes ( <em>Beginner</em> )</li>
 </ul>
 <h2 id="interests">Interests</h2>
-<h4 id="sports">Sports</h4>
 <ul>
 <li>Basketball</li>
-</ul>
-<h4 id="theater">Theater</h4>
-<ul>
-<li>Improv</li>
-<li>Comedy</li>
-</ul>
-<h4 id="other">Other</h4>
-<ul>
+<li>Guitar</li>
 <li>Wine tasting</li>
+<li>Theatre</li>
 </ul>
 
 </body>
